@@ -42,8 +42,8 @@ github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1/go.mod h1:wJfORR
 github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7/go.mod h1:FecbI9+v66THATjSRHfNgh1IVFe/9kFxbXtjV0ctIMA=
 github.com/grpc-ecosystem/grpc-gateway v1.5.0/go.mod h1:RSKVYQBd5MCa4OVpNdGskqpgL2+G+NZTnrVHpWWfpdw=
 github.com/jellevandenhooff/dkim v0.0.0-20150330215556-f50fe3d243e1/go.mod h1:E0B/fFc00Y+Rasa88328GlI/XbtyysCtTHZS8h7IrBU=
-github.com/jonaskay/cola-inventory-functions/config v0.0.0-20190126213443-d75a42071126 h1:amPIX6lzX4eTSvL3/yb1OKWSph3vA853zdZA4rzIT6U=
-github.com/jonaskay/cola-inventory-functions/config v0.0.0-20190126213443-d75a42071126/go.mod h1:U+z9OV0gesiCDF//9Gfmln8F8JKVkGCzqjgD5MYUQUo=
+github.com/jonaskay/cola-inventory-functions/config v0.0.0-20190129170434-9201ffc2ef24 h1:rZIoDcHyYQXi1OvT/CDfQ9/OGNRFKwyNV25xJVMOtag=
+github.com/jonaskay/cola-inventory-functions/config v0.0.0-20190129170434-9201ffc2ef24/go.mod h1:U+z9OV0gesiCDF//9Gfmln8F8JKVkGCzqjgD5MYUQUo=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=

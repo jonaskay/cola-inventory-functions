@@ -49,7 +49,7 @@ func Create(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if len(orders) > 0 && !orders[0].Delivered {
+	if len(orders) > 0 && orders[0].DeliveredAt.IsZero() {
 		w.WriteHeader(http.StatusForbidden)
 		jsonapi.MarshalErrors(w, []*jsonapi.ErrorObject{{
 			Title:  "Forbidden",
@@ -60,10 +60,7 @@ func Create(w http.ResponseWriter, r *http.Request) {
 	}
 
 	orderKey := datastore.IncompleteKey("Order", nil)
-	order := &config.Order{
-		CreatedAt: time.Now(),
-		Delivered: false,
-	}
+	order := &config.Order{CreatedAt: time.Now()}
 
 	key, err := dsClient.Put(ctx, orderKey, order)
 	if err != nil {

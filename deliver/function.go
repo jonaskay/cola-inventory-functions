@@ -4,6 +4,7 @@ import (
 	"context"
 	"net/http"
 	"os"
+	"time"
 
 	"cloud.google.com/go/datastore"
 	"github.com/google/jsonapi"
@@ -63,7 +64,7 @@ func Latest(w http.ResponseWriter, r *http.Request) {
 	k := keys[0]
 	o := orders[0]
 	o.ID = k.ID
-	o.Delivered = true
+	o.DeliveredAt = time.Now()
 
 	if _, err := dsClient.Put(ctx, k, o); err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
